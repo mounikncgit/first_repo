@@ -1,0 +1,9 @@
+<project name="HelloWorld" default="run" basedir=".">
+    <target name="compile">
+        <javac srcdir="." includeantruntime="false" />
+    </target>
+
+    <target name="run" depends="compile">
+        <java classname="LinkedList" fork="true" />
+    </target>
+</project>
